@@ -1,0 +1,437 @@
+/* Main */
+body {
+  font-family: Bahnschrift;
+  padding: 2em;
+}
+
+@font-face
+{
+	font-family: Bahnschrift;
+	src: url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face
+{
+	font-family: constantia;
+	src: url('../fonts/Constantia Font.ttf');
+}
+
+code {
+  font-family: monospace;
+  line-height: 200%;
+}
+
+section:not([id]) {
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em 0;
+  border-top: 1px solid #1B1B1B;
+}
+
+section h3 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #E1E1E1;
+  padding: 0.6em 0.9em;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+
+/* Navitation Button */
+
+nav {
+  text-align: center;
+}
+
+.button-nav-page {
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-nav-page span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-nav-page span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-nav-page:hover span {
+  padding-right: 25px;
+}
+
+.button-nav-page:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #1B1B1B;
+  background-color: #FFFFFF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  opacity: 0.5;
+}
+
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+
+/* Basic Interactive Elements Styling */
+
+.in-text-link {
+  display: inline-block;
+  color: #1B1B1B;
+  text-decoration:none;
+}
+
+.in-text-link:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.in-text-link:focus {
+  background-color: #E1E1E1;
+}
+
+.submit {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 2px solid #454545;
+  border-radius: 10px;
+  color: #454545;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 1.2em;
+}
+
+.submit:hover {
+  background-color: #787878;
+  color: white;
+}
+
+.reset {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 2px solid #454545;
+  border-radius: 10px;
+  color: #454545;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 1.2em;
+}
+
+.reset:hover {
+  background-color: #787878;
+  color: white;
+}
+
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 200px;
+}
+
+.swatches .color{
+  height: 200px;
+  width: 200px;
+}
+
+.swatches {
+  display: flex;
+}
+
+.swatches .color:nth-of-type(1) {
+  background-color: #1B1B1B;
+}
+
+.swatches .color:nth-of-type(2) {
+  background-color: #454545;
+}
+
+.swatches .color:nth-of-type(3) {
+  background-color: #787878;
+}
+
+.swatches .color:nth-of-type(6) {
+  background-color: #999999;
+}
+
+.swatches .color:nth-of-type(5) {
+  background-color: #E1E1E1;
+}
+
+.swatches .color:nth-of-type(4) {
+  background-color: #FFFFFF;
+}
+
+.color:nth-of-type(1) p{
+  color: white;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.color:nth-of-type(2) p{
+  color: white;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.color:nth-of-type(3) p{
+  color: white;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.color:nth-of-type(4) p{
+  color: black;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.color:nth-of-type(5) p{
+  color: black;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.color:nth-of-type(6) p{
+  color: black;
+  padding: 1em;
+  font-size: 20px;
+}
+
+/* Text Styling */
+.heading1 {
+  font-size:3.5em;
+  font-family: 'Constantia';
+}
+
+.heading2 {
+  font-size:2.5em;
+  font-family: 'Bahnschrift';
+}
+
+.heading3 {
+  font-size:1.5em;
+  font-family: 'Constantia';
+}
+
+.paragraph {
+  font-size: 15px;
+}
+
+ul, ul a{
+  color: #1B1B1B;
+  text-decoration:none;
+  list-style-type: square;
+}
+
+ul a:hover, ul a:focus {
+  color: #999999;
+}
+
+.bulleted{
+  font-size: 15px;
+}
+
+ol, ol a{
+  color: #1B1B1B;
+  text-decoration:none;
+}
+
+ol a:hover, ol a:focus {
+  color: #999999;
+}
+
+.numbered{
+  font-size: 15px;
+}
+
+/* Modular Pattern Elements */
+.bgcolor{
+  height: 100px;
+  background-color: #1B1B1B;
+}
+
+ul.main-nav {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+li.main {
+  float: left;
+}
+
+li.main a {
+  display: block;
+  color: #1B1B1B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.main a:hover:not(.active) {
+  background-color: #E1E1E1;
+  color: #FFFFFF;
+}
+
+.active {
+  background-color: #E1E1E1;
+}
+
+.product-list {
+  display:flex;
+
+}
+
+.product {
+  margin-left: 3rem;
+}
+
+img {
+  width:100%;
+  height:100%;
+}
+
+.cart-title {
+  font-family: "Constantia";
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cart {
+  text-align: center;
+}
+
+.check-button {
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.check-button:hover, .check-button:focus {
+  opacity: 0.5;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.check-img {
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.check-img div{
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 200px;
+  background-color: #FFFFFF;
+  flex-basis: 25%;
+}
+
+.img-buy {
+  text-align: center;
+}
+
+.img-buy2 {
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+}
+
+.subtotal {
+  display: flex;
+}
+
+.subtotal {
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.subtotal div{
+  margin:20px;
+  height: 200px;
+  background-color: #FFFFFF;
+  flex-basis: 25%;
+}
+
+.final1 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.final2 {
+  text-align: right;
+  font-size: 20px;
+}

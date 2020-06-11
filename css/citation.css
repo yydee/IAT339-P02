@@ -1,0 +1,80 @@
+/* Main */
+body {
+  font-family: Bahnschrift;
+  padding: 2em;
+}
+
+code {
+  font-family: monospace;
+  line-height: 200%;
+}
+
+section:not([id]) {
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em 0;
+  border-top: 1px solid #1B1B1B;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #E1E1E1;
+  padding: 0.6em 0.9em;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+
+/* Navitation Button */
+
+nav {
+  text-align: center;
+}
+
+.button-nav-page {
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-nav-page span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-nav-page span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-nav-page:hover span {
+  padding-right: 25px;
+}
+
+.button-nav-page:hover span:after {
+  opacity: 1;
+  right: 0;
+}
