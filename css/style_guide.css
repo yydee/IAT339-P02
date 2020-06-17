@@ -308,13 +308,11 @@ ol a:hover, ol a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   padding: 2em 2em;
 }
 .main-nav a{
   text-decoration: none;
   color: #1B1B1B;
-  border: 1px solid red;
   padding: 0em 0.5em;
   font-size: 1.1em;
 
