@@ -302,43 +302,61 @@ ol a:hover, ol a:focus {
 }
 
 /* Modular Pattern Elements */
-.bgcolor{
-  height: 100px;
-  background-color: #1B1B1B;
-}
 
-ul.main-nav {
-  list-style-type: none;
-  margin: 20px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
 
-li.main {
-  float: left;
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  padding: 2em 2em;
 }
-
-li.main a {
-  display: block;
-  color: #1B1B1B;
-  text-align: center;
-  padding: 14px 16px;
+.main-nav a{
   text-decoration: none;
+  color: #1B1B1B;
+  border: 1px solid red;
+  padding: 0em 0.5em;
+  font-size: 1.1em;
+
+
+}
+  
+.nav-left{
+  flex-basis: 25%;
+}
+.nav-left a:hover{
+  font-size: 120%;
 }
 
-li.main a:hover:not(.active) {
-  background-color: #E1E1E1;
-  color: #FFFFFF;
+
+.nav-logo{
+  flex-basis: 50%;
+  text-align: center; 
+}
+.nav-logo a{
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 2em;
+}
+.nav-logo i{
+  font-size: 2em;
+  color: #1B1B1B;
 }
 
-.active {
-  background-color: #E1E1E1;
+.nav-right{
+  flex-basis: 25%;
+  text-align: right;  
 }
+.nav-right a:hover{
+  font-size: 120%;
+}
+
+
+/*done*/
 
 .product-list {
   display:flex;
-
+  
 }
 
 .product {
