@@ -1,0 +1,154 @@
+*{
+	font-family: Bahnschrift;
+}
+/*font address list*/
+@font-face
+{
+	font-family: Bahnschrift;
+	src: url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face
+{
+	font-family: constantia;
+	src: url('../fonts/Constantia Font.ttf');
+}
+
+/*category page header = nav menu + top banner*/
+.header{
+	width: 100%;
+	height: 4em;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #1B1B1B;
+  padding: 0em 0.5em;
+  font-size: 1.1em;
+}
+  
+.nav-left{
+	font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+}
+.nav-left a:hover{
+  font-size: 120%;
+}
+.nav-logo{
+  flex-basis: 50%;
+  text-align: center; 
+}
+.nav-logo a{
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 2em;
+}
+.nav-logo i{
+  font-size: 2em;
+  color: #1B1B1B;
+}
+.nav-right{
+	font-family: Bahnschrift;
+  	font-weight: bold;
+  	flex-basis: 25%;
+  	text-align: right;  
+}
+.nav-right a:hover{
+  font-size: 120%;
+}
+#top-banner-image{
+	width: 100%;
+	height: 30em;
+	margin-bottom: 1em;
+}
+.top-banner-image img{
+	width: 100%;
+	height: 30em;
+}
+/*contact page main = contact info + input gird */
+.main-title{
+	text-align: center;
+}
+h1{
+	font-family: Constantia;
+}
+.main{
+	margin: 1em 0;
+	display: flex;
+}
+.main-left-input{
+	flex-basis: 50%;
+	height: 50em;
+	
+}
+.main-left-input div{
+	width: 50%;
+	margin-top: 3em;
+	margin-left: 40%;
+
+}
+.main-left-input label{
+	display: block;
+}
+.main-left-input input{
+	width: 18em;
+	height: 2em;
+	border: 2px solid #454545;
+	border-radius: 4px;
+}
+.main-left-input textarea{
+	width: 18em;
+	height: 10em;
+	border: 2px solid #454545;
+	border-radius: 4px;
+}
+
+.submit {
+  font-family: Bahnschrift;
+  display: block;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.submit:hover, .submit:focus {
+  opacity: 0.5;
+}
+
+.main-right-info{
+	flex-basis: 50%;
+	height: 50em;
+}
+.main-right-info div{
+	width: 30%;
+	margin: 3em auto;
+}
+.main-right-info i{
+	font-size: 2em;
+}
+
+/* contact page footer style*/
+.footer{
+	width: 100%;
+	height: 16em;
+	background-color: #454545;
+	margin: 1em 0;
+}
+
+
+
+
+
+
+
+
