@@ -1,0 +1,140 @@
+*{
+  font-family: Bahnschrift;
+}
+
+
+/*font address list*/
+@font-face
+{
+	font-family: Bahnschrift;
+	src: url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face
+{
+	font-family: constantia;
+	src: url('../fonts/Constantia Font.ttf');
+}
+
+/*account page header = nav menu + top banner*/
+.header{
+	width: 100%;
+	height: 4em;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #1B1B1B;
+  padding: 0em 0.5em;
+  font-size: 1.1em;
+}
+  
+.nav-left{
+	font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+}
+.nav-left a:hover{
+  font-size: 120%;
+}
+.nav-logo{
+  flex-basis: 50%;
+  text-align: center; 
+}
+.nav-logo a{
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 2em;
+}
+.nav-logo i{
+  font-size: 2em;
+  color: #1B1B1B;
+}
+.nav-right{
+	font-family: Bahnschrift;
+  	font-weight: bold;
+  	flex-basis: 25%;
+  	text-align: right;  
+}
+.nav-right a:hover{
+  font-size: 120%;
+}
+h1{
+  text-align: center;
+  font-family: Constantia;
+  margin-top: 2em;
+}
+/*account page main section part*/
+.main{
+  display: flex;
+  justify-content:space-between; 
+}
+.sub-menu-left{
+  flex-basis: 20%;
+  height: 10em;
+}
+.sub-menu-left div{
+  width: 80%;
+  height: 10em;
+  background: #454545;
+  margin: 2em auto;
+}
+.input-info-center{
+  flex-basis: 60%;
+  height: 40em;
+}
+.empty-space-right{
+  flex-basis: 20%;
+}
+
+.input-info-center div{
+  width: 40%;
+  margin: 2em auto;
+}
+.input-info-center label{
+  display: block;
+
+}
+.input-info-center input{
+  width: 20em;
+  height: 2em;
+  margin-top: 1em;
+  border: 1px solid #1B1B1B;
+}
+.submit {
+  font-family: Bahnschrift;
+  display: block;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.submit:hover, .submit:focus {
+  opacity: 0.5;
+}
+
+
+
+/*account page footer*/
+.footer{
+  width: 100%;
+  height: 16em;
+  background-color: #454545;
+  margin: 1em 0;
+}
+
+
+
+
+
+
+
