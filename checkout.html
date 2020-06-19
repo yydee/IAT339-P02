@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Checkout</title>
+	<link href="css/checkout.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<!--Main Navigation-->
+
+	<div class="main-nav">
+		<div class="nav-left">
+			<a href="">HOME</a>
+			<a href="">SHOP</a>
+			<a href="">CONTACT</a>
+		</div>
+
+		<div class="nav-logo">
+			<i class="fa fa-headphones"></i>
+			<a class="logo-font" href="">NOIZERO</a>
+		</div>
+
+		<div class="nav-right">
+			<a href=""><i class="fa fa-user"></i></a>
+			<a href="">MY CART</a>
+		</div>
+	</div>
+
+	<!--Checkout Content-->
+	<section class="checkout">
+
+		<div class="info">
+
+			<div class="contact-info">
+				<h3>Contact Information</h3>
+				<form>
+					<input type="email" id="email" name="email" placeholder="email@address.com"><br>
+					<input type="checkbox" id="notification" name="notification" value="notify-me">
+					<label for="notification"> Keep me receive the news</label>
+				</form>
+			</div>
+
+			<div class="shipping-info">
+				<h3>Shipping Information</h3>
+				<form>
+					<input type="text" id="first-name" name="first-name" placeholder="First Name">
+					<input type="text" id="last-name" name="last-name" placeholder="Last Name"><br>
+					<input type="text" id="address" name="address" placeholder="Address"><br>
+					<input type="text" id="more-address" name="more-address" placeholder="Apartment, suite etc."><br>
+					<input type="text" id="city" name="city" placeholder="City"><br>
+
+					<div class="customize-select">
+						<select id="countries" name="contries">
+							<option value="canada">Canada</option>
+							<option value="america">America</option>
+						</select>
+						<select id="province" name="province">
+							<option value="BC">BC</option>
+							<option value="ON">ON</option>
+							<option value="QC">QC</option>
+							<option value="AB">AB</option>
+						</select>
+					</div>
+
+					<input type="text" id="post-code" name="post-code" placeholder="Postal Code"><br>
+					<input type="checkbox" id="save" name="save" value="save-default">
+					<label for="save"> save as default</label>
+				</form>
+			</div>
+
+			<div class="shipping-method">
+
+				<h3>Shipping Method</h3>
+				<form>
+					<input type="radio" id="standard" name="standard" value="standard">
+					<label for="standard">Standard</label><br>
+					<input type="radio" id="express" name="express" value="express">
+					<label for="express">Express</label>
+				</form>
+
+			</div>
+
+			<div class="payment-method">
+
+				<h3>Payment Method</h3>
+				<form>
+					<input type="text" id="card-number" name="card-number" placeholder="Card Number"><br>
+					<input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+					<input type="text" id="security-code" name="security-code" placeholder="000">
+				</form>
+			</div>
+
+			<div class="submit-button">
+
+				<input class="submit" type="submit" value="PAY NOW">
+
+			</div>
+
+		</div>
+
+		<div class="payment-price">
+
+			<h2>Total Summary</h2>
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>
