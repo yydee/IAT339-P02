@@ -1,0 +1,289 @@
+@font-face
+{
+  font-family: Bahnschrift;
+  src: url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face
+{
+  font-family: constantia;
+  src: url('../fonts/Constantia Font.ttf');
+}
+
+/*Main Navigation Start*/
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #1B1B1B;
+  padding: 0em 0.5em;
+  font-size: 1.1em;
+}
+  
+.nav-left{
+  font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+}
+.nav-left a:hover{
+  font-size: 120%;
+}
+
+
+.nav-logo{
+  flex-basis: 50%;
+  text-align: center; 
+}
+.nav-logo a{
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 2em;
+}
+.nav-logo i{
+  font-size: 2em;
+  color: #1B1B1B;
+}
+
+.nav-right{
+  font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+  text-align: right;  
+}
+.nav-right a:hover{
+  font-size: 120%;
+}
+
+/*Main Navigation End*/
+
+/*My Cart Content Start*/
+.cart-title {
+  font-family: "Constantia";
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cart {
+  text-align: center;
+}
+
+.check-button {
+  font-family: Bahnschrift;
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.check-button:hover, .check-button:focus {
+  opacity: 0.5;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.check-img {
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.check-img div{
+  font-family: Bahnschrift;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 200px;
+  background-color: #FFFFFF;
+  flex-basis: 25%;
+}
+
+.img-buy {
+  text-align: center;
+}
+
+.img-buy2 {
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+}
+
+.subtotal {
+  display: flex;
+}
+
+.subtotal {
+  font-family: Bahnschrift;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.subtotal div{
+  font-family: Bahnschrift;
+  margin:20px;
+  height: 200px;
+  background-color: #FFFFFF;
+  flex-basis: 25%;
+}
+
+.final1 {
+  font-family: Bahnschrift;
+  text-align: left;
+  font-size: 20px;
+}
+
+.final2 {
+  font-family: Bahnschrift;
+  text-align: right;
+  font-size: 20px;
+}
+
+.cart img {
+  width: 12em;
+  height: 12em;
+}
+
+/*My Cart Content End*/
+
+/*Frequently bought together Start*/
+.promo-title {
+  font-family: Constantia;
+  font-size: 2em;
+  text-align: center;
+}
+
+.cart-promotion {
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.cart-promotion div{
+  font-family: Bahnschrift;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  height: 200px;
+  background-color: #FFFFFF;
+  flex-basis: 25%;
+}
+
+.promo1 {
+  text-align: center;
+  padding-bottom: 12em;
+  padding-left: 4em;
+  padding-top: 1em;
+  padding-right: 0;
+}
+
+.promo2 {
+  text-align: center;
+  padding-bottom: 12em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-left: 0;
+}
+
+
+.promo1 img {
+  width: 16em;
+  height: 16em;
+}
+
+.promo2 img {
+  width: 16em;
+  height: 16em;
+}
+
+.button-add {
+  display: inline-block;
+  padding: 0.6em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-add span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-add span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-add:hover span {
+  padding-right: 25px;
+}
+
+.button-add:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.check-button {
+  font-family: Bahnschrift;
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.check-button:hover, .check-button:focus {
+  opacity: 0.5;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.promotion {
+  text-align: center;
+}
+
+/*Frequently bought together End*/
+
+/*Footer Start*/
+
+.footer {
+  margin-top: 10em;
+  background-color: #454545;
+  height: 16em;
+}
+
+/*Footer End*/
