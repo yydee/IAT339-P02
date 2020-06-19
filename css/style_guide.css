@@ -140,49 +140,51 @@ nav {
   background-color: #E1E1E1;
 }
 
+
 .submit {
+  font-family: Bahnschrift;
   display: inline-block;
-  background-color: #FFFFFF;
-  border: 2px solid #454545;
-  border-radius: 10px;
-  color: #454545;
-  padding: 8px 15px;
-  text-align: center;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
   text-decoration: none;
-  font-weight:bold;
-  font-size: 1.2em;
+  opacity: 1;
+  transition: 0.8s;
 }
 
-.submit:hover {
-  background-color: #787878;
-  color: white;
+.submit:hover, .submit:focus {
+  opacity: 0.5;
 }
+
 
 .reset {
+  font-family: Bahnschrift;
   display: inline-block;
-  background-color: #FFFFFF;
-  border: 2px solid #454545;
-  border-radius: 10px;
-  color: #454545;
-  padding: 8px 15px;
-  text-align: center;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
   text-decoration: none;
-  font-weight:bold;
-  font-size: 1.2em;
+  opacity: 1;
+  transition: 0.8s;
 }
 
-.reset:hover {
-  background-color: #787878;
-  color: white;
+.reset:hover, .reset:focus {
+  opacity: 0.5;
 }
+
 
 input[type=text] {
-  width: 100px;
-  -webkit-transition: width 0.35s ease-in-out;
-  transition: width 0.35s ease-in-out;
-}
-input[type=text]:focus {
-  width: 200px;
+  width: 20%;
+  height: 2em;
+  margin-bottom: 1em;
 }
 
 .swatches .color{
