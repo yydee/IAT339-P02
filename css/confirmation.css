@@ -1,0 +1,144 @@
+@font-face
+{
+  font-family: Bahnschrift;
+  src: url('../fonts/BAHNSCHRIFT.TTF');
+}
+
+@font-face
+{
+  font-family: constantia;
+  src: url('../fonts/Constantia Font.ttf');
+}
+/*Main Navigation Start*/
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #1B1B1B;
+  padding: 0em 0.5em;
+  font-size: 1.1em;
+}
+
+.nav-left{
+  font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+}
+.nav-left a:hover{
+  font-size: 120%;
+}
+
+
+.nav-logo{
+  flex-basis: 50%;
+  text-align: center; 
+}
+.nav-logo a{
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 2em;
+}
+.nav-logo i{
+  font-size: 2em;
+  color: #1B1B1B;
+}
+
+.nav-right{
+  font-family: Bahnschrift;
+  font-weight: bold;
+  flex-basis: 25%;
+  text-align: right;  
+}
+.nav-right a:hover{
+  font-size: 120%;
+}
+
+/*Main Navigation End*/
+
+/*Content Start*/
+
+.confirmation-content i {
+  font-size: 4em;
+}
+
+.bag-icon {
+  margin-top: 7em;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.thank-you h2{
+  font-family: Constantia;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.thank-you h3{
+  font-family: Constantia;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.in-text-link {
+  font-family: Bahnschrift;
+  display: inline-block;
+  color: #1B1B1B;
+  text-decoration:none;
+}
+
+.in-text-link:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.in-text-link:focus {
+  background-color: #E1E1E1;
+}
+
+.home-content h2 {
+  font-size: 2.5em;
+}
+
+.back-to-shop {
+  margin-top: 8em;
+  margin-bottom: 8em;
+  text-align: center;
+}
+
+.check-button {
+  font-family: Bahnschrift;
+  display: inline-block;
+  padding: 0.5em 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #1B1B1B;
+  color: #FFFFFF;
+  background-color: #1B1B1B;
+  border-radius: 0.25em;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.check-button:hover, .check-button:focus {
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: 7em;
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  padding:8em 2.5em;
+  background-color: #454545;
+  color: white;
+}
