@@ -169,6 +169,20 @@
 }
 
 @media (max-width: 555px){
+	.main-side-menu{
+		display: none;
+	}
+	.list-first-column{
+		display: block;
+		flex-basis: 100%;
+	}
+	.list-second-column{
+		display: block;
+		flex-basis: 100%;
+	}
+	.header{
+		font-size: 0.5em;
+	}
 
 }
 
