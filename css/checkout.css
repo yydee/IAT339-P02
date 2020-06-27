@@ -69,7 +69,7 @@
   font-family: Bahnschrift;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 5em;
 }
 
@@ -77,6 +77,8 @@ input[type=email] {
   width: 100%;
   height: 2em;
   margin-bottom: 1em;
+  border: 1px solid #1B1B1B;
+  border-radius: 3px;
 }
 
 .contact-info label {
@@ -87,6 +89,8 @@ input[type=text] {
   width: 100%;
   height: 2em;
   margin-bottom: 1em;
+  border: 1px solid #1B1B1B;
+  border-radius: 3px;
 }
 
 .shipping-info label {
@@ -97,6 +101,8 @@ select {
   width: 101%;
   height: 2em;
   margin-bottom:1em;
+  border: 1px solid #1B1B1B;
+  border-radius: 3px;
 }
 
 .submit-button {
@@ -122,15 +128,46 @@ select {
   opacity: 0.5;
 }
 
+.checkout-page {
+  display:flex;
+  justify-content: center;
+}
+
+.checkout-page>div {
+  flex-basis:70%;
+  margin: 3em 10em;
+}
 /*Content on left End*/
 
 
 
 /*Content on right Start*/
 
-.payment-price {
-  background-color: #E1E1E1;
-  padding: 2em 12em;
+.order-summary { 
+  display:flex;
+  justify-content: center;
+}
+
+.order-title {
+  text-align: center;
+}
+
+.order-summary>div {
+  flex-basis:40%;
+  margin:5em;
+}
+
+.left-row {
+  text-align: left;
+}
+
+.right-row {
+  text-align: right;
+}
+
+.final-price {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 
