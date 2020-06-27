@@ -33,12 +33,15 @@
 }
   
 .nav-left{
-	font-family: Bahnschrift;
+  font-family: Bahnschrift;
   font-weight: bold;
   flex-basis: 25%;
 }
 .nav-left a:hover{
   font-size: 120%;
+}
+.menu-expand{
+	display: none;
 }
 .nav-logo{
   flex-basis: 50%;
@@ -67,13 +70,7 @@
 	margin-bottom: 1em;
 }
 /*category page body section = sub nav menu + product list*/
-/*.body{
-	width: 80vw;
-	height: 40em;
-	background-color: gray;
-	border: 1px solid red;
-	margin: 1em 0;
-}*/
+
 .main{
 	display: flex;
 	justify-content: space-around;
@@ -154,19 +151,26 @@
 }
 
 
-@media (max-width: 555px){
-	.main-side-menu{
+@media (max-width: 980px){
+	.nav-left {
+		flex-direction: column;
 		display: none;
 	}
-	.list-first-column{
-		display: block;
-		flex-basis: 100%;
+	.nav-left a{
+		width: 100%;
+		text-align: center;
 	}
-	.list-second-column{
+	.menu-expand{
 		display: block;
-		flex-basis: 100%;
 	}
-	.header{
-		font-size: 0.5em;
+	.nav-left a{
+		display: block;
 	}
 }
+
+@media (max-width: 555px){
+
+}
+
+
+
