@@ -8,58 +8,56 @@
 	<title>My Shopping Cart</title>
 	<link href="css/cart.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 	<!--Main Navigation-->
+	<div class="header" >
+		<div class="main-nav">
+			<input type="checkbox" name="menuBar" id="menuCheck">
+			<label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
+        	<nav class="nav-left">
+	        	<a href="home.html">HOME</a>
+	        	<a href="category.html">SHOP</a>
+	       		<a href="contact.html">CONTACT</a>
+	        </nav>
 
-	<div class="main-nav">
-		<div class="nav-left">
-			<a href="home.html">HOME</a>
-			<a href="category.html">SHOP</a>
-			<a href="contact.html">CONTACT</a>
-		</div>
+	        <div class="nav-logo">
+	        	<a class="logo-font" href="home.html">NOIZERO</a>
+	        </div>
 
-		<div class="nav-logo">
-			<i class="fa fa-headphones"></i>
-			<a class="logo-font" href="home.html">NOIZERO</a>
-		</div>
-
-		<div class="nav-right">
-			<a href="account.html"><i class="fa fa-user"></i></a>
-			<a href="cart.html">MY CART</a>
-		</div>
+	        <div class="nav-right">
+	        	<a href="account.html"><i class="fa fa-user"></i></a>
+	      		<a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
+	        </div>
+		 </div>
 	</div>
 
 	<!--My Cart Content-->
 	<section>
 
 		<div class="cart">
-
 			<h1 class="cart-title">My Cart</h1>
 			<button onclick="window.location.href='checkout.html'" class="check-button button1">CONTINUE TO CHECK OUT</button>
-
-			<div class="check-img">
-				<div class="img-buy"></div>
-				<div class="img-buy">
-					<img src="images/product2.png" alt="product2">
+			<div class="check-img" id="product-detail">
+				<div class="img-buy" id="product-image">
+					<img src="images/product4.png" alt="product4">
 				</div>
-				<div class="img-buy2">
-					<p>Product Name</p>
-					<p>Color: Black</p>
-					<p>Quantity: 1</p>
-					<p class="price">$219.99</p>
+				<div class="img-buy2" id="product-text">
+					<div>NC 750 Wireless</div>
+					<div>Color : Pink</div>
+					<div>Quantity : 1</div>
 				</div>
-				<div class="img-buy"></div>
+				<div class="price" id="product-price"><div>$219.99</div></div>
 			</div>
 
 			<div class="subtotal">
-				<div class="final"></div>
-				<div class="final1">Subtotal</div>
-				<div class="final2">$219.99</div>
-				<div class="final"></div>
+				<div class="final1"><p>Subtotal</p></div>
+				<div class="final2"></div>
+				<div class="final3"><p>$219.99</p></div>
+				
 			</div>
 
 		</div>
@@ -71,22 +69,18 @@
 		<h2 class="promo-title">Frequently bought together</h2>
 
 		<div class="cart-promotion">
-
-			<div class="promo"></div>
-
 				<div class="promo1">
 					<img src="images/product1.png" alt="product1">
-					<p>Product Name</p>
-					<p>Price</p>
+					<p>NC 900 Wireless</p>
+					<p>$249.99</p>
 					<a href="" class="button-add"><span>ADD TO CART</span></a>
 				</div>
 				<div class="promo2">
 					<img src="images/product3.png" alt="product3">
-					<p>Product Name</p>
-					<p>Price</p>
+					<p>NC 900 Wireless</p>
+					<p>$249.99</p>
 					<a href="" class="button-add"><span>ADD TO CART</span></a>
 				</div>
-			<div class="promo"></div>
 
 		</div>
 
@@ -96,8 +90,29 @@
 
 	<!-- footer-->
 
-	<section class="footer">
-		<h3>Footer</h3>
+	<section>
+		<div class="footer">
+				<div class="footer-left">
+					<div>FOLLOW US</div>
+					<i class='fa fa-facebook-square'></i>
+					<i class='fa fa-instagram'></i>
+					<i class='fa fa-twitter-square'></i>
+				</div>
+				<div class="footer-right">
+					<div class="corporation">© NOIZERO Corporation 2020</div>
+					<div class="links">
+						<div class="link1">
+							<a href="style_guide.html">Style Guide</a>
+						</div>
+						<div class="link2">
+							<a href="citation.html">Citation</a>
+						</div>
+						<div class="link3">
+							<a href="wireframes.html">Wireframes</a>
+						</div>
+					</div>
+				</div>
+			</div>
 	</section>
 
 </body>
