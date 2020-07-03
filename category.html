@@ -6,118 +6,156 @@
 	<!-- mobile responsive link-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/category.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/carousel.js"></script>
 	<!-- font links -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- category page header = nav menu + top banner -->
 	<div class="header" >
 		<div class="main-nav">
-			<div class="menu-expand"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+			<input type="checkbox" name="menuBar" id="menuCheck">
+			<label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
         	<nav class="nav-left">
-	        <a href="home.html">HOME</a>
-	        <a href="category.html">SHOP</a>
-	        <a href="contact.html">CONTACT</a>
+	        	<a href="home.html">HOME</a>
+	        	<a href="category.html">SHOP</a>
+	       		<a href="contact.html">CONTACT</a>
 	        </nav>
-	        <div class="nav-logo">
-	        <i class="fa fa-headphones"></i>
-	        <a class="logo-font" href="home.html">NOIZERO</a>
 
+	        <div class="nav-logo">
+	        	<a class="logo-font" href="home.html">NOIZERO</a>
 	        </div>
+
 	        <div class="nav-right">
-	        <a href="account.html"><i class="fa fa-user"></i></a>
-	        <a href="cart.html">MY CART</a>
+	        	<a href="account.html"><i class="fa fa-user"></i></a>
+	      		<a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
 	        </div>
 		 </div>
-	
-		 
-
 	</div>
 	<!-- top banner -->
-	<div id="top-banner-image"><img src="images/category.jpeg" alt="place holder"></div>
+	<div id="top-banner-image"><img src="images/headsets_banner.png" alt="place holder"></div>
 	<!-- category page body section = sub nav menu + product list -->
 	<div class="main">
 		<div class="main-side-menu">
-			<div class="filter"><a href="javascript:void(0)">Fliter</a></div>
-			<div class="side-menu-top">
+			<input type="checkbox" name="menuBar" id="fliterCheck">
+			<label for="fliterCheck" class="fliter-expand" >SORT BY</label>
+			<div class="side-menu-fit">
+				<h3>FIT</h3>
 				<div>
-				<input type="checkbox" name="">
-				<label>Wire</label>
+					<input type="checkbox" name="">
+					<label>In-ear</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>Wireless</label>
+					<input type="checkbox" name="">
+					<label>Over-ear</label>
+				</div>
+
+			</div>
+
+			<div class="side-menu-features">
+				<h3>FEATURES</h3>
+				<div>
+					<input type="checkbox" name="">
+					<label>Wireless</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>Sports</label>
+					<input type="checkbox" name="">
+					<label>Sport</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>Aviation Headsets</label>
-				</div>
-				<div>
-				<input type="checkbox" name="">
-				<label>Noise Canselling</label>
+					<input type="checkbox" name="">
+					<label>Aviation</label>
 				</div>
 			</div>
-			<div class="side-menu-bottom">
+
+			<div class="side-menu-sort">
+				<h3>SORT BY</h3>
 				<div>
-				<input type="checkbox" name="">
-				<label>$10~$50</label>
+					<input type="checkbox" name="">
+					<label>Highest Rated</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>$50~$100</label>
+					<input type="checkbox" name="">
+					<label>Price: Low to High</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>$100~$150</label>
+					<input type="checkbox" name="">
+					<label>Price: High to Low</label>
 				</div>
 				<div>
-				<input type="checkbox" name="">
-				<label>$200~$250</label>
-				</div>
-				<div>
-				<input type="checkbox" name="">
-				<label>Above $250</label>
+					<input type="checkbox" name="">
+					<label>Relevance</label>
 				</div>
 			</div>
 		</div>
 		<div class="main-product-list">
-			<div class="list-first-column">
+			<div class="list-column">
 				<div class="single-product">
 					<a href="product.html"><img src="images/product1.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>NC 700 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(5)</i>
+					</div>
 				</div>
 				<div class="single-product">
 					<a href="product.html"><img src="images/product2.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>EB 200 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(205)</i>
+				</div>
 				</div>
 				<div class="single-product">
 					<a href="product.html"><img src="images/product3.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>NC 900 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(220)</i>
+				</div>
 				</div>
 			
 				<div class="single-product">
 					<a href="product.html"><img src="images/product4.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>NC 750 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(15)</i>
+				</div>
 				</div>
 				<div class="single-product">
 					<a href="product.html"><img src="images/product3.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>NC 900 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(20)</i>
+				</div>
 				</div>
 				<div class="single-product">
 					<a href="product.html"><img src="images/product2.png" alt="placeholder"></a>
-					<p>Product name</p>
+					<p>EB 200 Wireless</p>
 					<span>$249.99</span>
+					<div class="product-popular-level">
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star"></i>
+					<i class="	fa fa-star">(25)</i>
+				</div>
 				</div>
 			</div>
 
@@ -132,8 +170,29 @@
 	
 	</div>
 	<!-- category page footer -->
-	<div class="footer">
-		
-	</div>
+	<section>
+			<div class="footer">
+				<div class="footer-left">
+					<div>FOLLOW US</div>
+					<i class='fa fa-facebook-square'></i>
+					<i class='fa fa-instagram'></i>
+					<i class='fa fa-twitter-square'></i>
+				</div>
+				<div class="footer-right">
+					<div class="corporation">© NOIZERO Corporation 2020</div>
+					<div class="links">
+						<div class="link1">
+							<a href="style_guide.html">Style Guide</a>
+						</div>
+						<div class="link2">
+							<a href="citation.html">Citation</a>
+						</div>
+						<div class="link3">
+							<a href="wireframes.html">Wireframes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
 </body>
 </html>
