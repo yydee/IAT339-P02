@@ -3,60 +3,90 @@
 <head>
 	<title>Account Page</title>
 	<meta charset="utf-8">
+	<!-- mobile responsive link-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/account.css">
 	<!-- font links -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- account page header = nav menu + logo -->
 	<div class="header">	
 		<div class="main-nav">
-        	<div class="nav-left">
+			<input type="checkbox" name="menuBar" id="menuCheck">
+			<label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
+        	<nav class="nav-left">
 	        <a href="home.html">HOME</a>
 	        <a href="category.html">SHOP</a>
 	        <a href="contact.html">CONTACT</a>
-	        </div>
+	        </nav>
 	        <div class="nav-logo">
-	        <i class="fa fa-headphones"></i>
 	        <a href="home.html" class="logo-font">NOIZERO</a>
 	        
 	        </div>
 	        <div class="nav-right">
 	        <a href="account.html"><i class="fa fa-user"></i></a>
-	        <a href="cart.html">MY CART</a>
+	        <a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
 	        </div>
 		  </div>
 	</div>
-	<h1>Account Details</h1>
+	<div id="top-banner-image"><img src="images/account_banner.png" alt="Image of Banner"></div>
 	<!-- account page main = input -->
 	<div class="main">
-		<div class="sub-menu-left">
-			<div>Sub-Menu</div>
-		</div>
 		<div class="input-info-center">
-			<div><h2>Account Information</h2></div>
+			<h3>Personal Information</h3>
 			<div>
-				<label>First Name</label>
+				<label>First name</label>
 				<input type="text" name="name">
 			</div>
 			<div>
-				<label>Last Name</label>
+				<label>Last name</label>
 				<input type="text" name="name">
 			</div>
 			<div>
-				<label>Email Address</label>
+				<label>Email address</label>
 				<input type="email" name="name">
 			</div>
+			<h3>Account Password</h3>
 			<div>
-				<label>Address</label>
+				<label>Old password</label>
+				<input type="text" name="name">
+			</div>
+			<div>
+				<label>New password</label>
 				<input type="text" name="name">
 			</div>
 			<div><input class="submit" type="submit" value="SAVE"></div>
 		</div>
-		<div class="empty-space-right"></div>
 	</div>
 	<!-- account page footer  -->
-	<div class="footer"></div>
+	<section>
+
+			<div class="footer">
+				<div class="footer-left">
+					<div>FOLLOW US</div>
+					<i class='fa fa-facebook-square'></i>
+					<i class='fa fa-instagram'></i>
+					<i class='fa fa-twitter-square'></i>
+				</div>
+				<div class="footer-right">
+					<div class="corporation">© NOIZERO Corporation 2020</div>
+					<div class="links">
+						<div class="link1">
+							<a href="style_guide.html">Style Guide</a>
+						</div>
+						<div class="link2">
+							<a href="citation.html">Citation</a>
+						</div>
+						<div class="link3">
+							<a href="wireframes.html">Wireframes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 </body>
 </html>
