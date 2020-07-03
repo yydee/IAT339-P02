@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 @font-face
 {
   font-family: Bahnschrift;
@@ -12,11 +15,21 @@
 
 /*Main Navigation Start*/
 
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 2em;
+  margin-bottom:1rem;
 }
 .main-nav a{
   text-decoration: none;
@@ -24,35 +37,36 @@
   padding: 0em 0.5em;
   font-size: 1.1em;
 }
-
+  
 .nav-left{
   font-family: Bahnschrift;
   font-weight: bold;
-  flex-basis: 25%;
+  flex-basis: 35%;
+
 }
 .nav-left a:hover{
   font-size: 120%;
 }
-
-
+.menu-expand{
+  display: none;
+  width:35%;
+}
+#menuCheck{
+  display: none;
+}
 .nav-logo{
-  flex-basis: 50%;
+  flex-basis: 30%;
   text-align: center; 
 }
 .nav-logo a{
-  font-family: Constantia;
+  font-family: 'Black Ops One', cursive;
   font-weight: bold;
   font-size: 2em;
 }
-.nav-logo i{
-  font-size: 2em;
-  color: #1B1B1B;
-}
-
 .nav-right{
   font-family: Bahnschrift;
-  font-weight: bold;
-  flex-basis: 25%;
+    font-weight: bold;
+    flex-basis: 35%;
   text-align: right;  
 }
 .nav-right a:hover{
@@ -65,13 +79,130 @@
 
 /*Content on left Start*/
 
-.checkout {
+form{
+  max-width: 900px;
+  margin:auto;
+}
+
+.contact-info {
   font-family: Bahnschrift;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  margin: auto;
+}
+
+.contact-info h3 {
+  margin-top: 3em;
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.contact-detail {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 5em;
+  justify-content: space-between;
+  margin-top:0.6em;
 }
+
+.contact-detail>div {
+  flex-basis: 47%;
+}
+
+.shipping-info {
+  font-family: Bahnschrift;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  /*width:50%;*/
+  margin: auto;
+}
+
+.shipping-info h3 {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin-top: 3em;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.shipping-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:0.6em;
+}
+
+.shipping-detail>div {
+  flex-basis: 47%;
+}
+
+.shipping-method {
+  font-family: Bahnschrift;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  /*width:50%;*/
+  margin: auto;
+}
+
+.shipping-method h3 {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin-top: 3em;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.shipping-method-detail {
+  line-height: 200%;
+}
+
+.payment-method>div {
+  font-family: Bahnschrift;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.payment-method {
+  font-family: Bahnschrift;
+  /*width:50%;*/
+  margin: auto;
+}
+
+.payment-method h3 {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin-top: 3em;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.payment-detail {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  width:100%;
+}
+
+.card-num {
+  margin-top:0.6em;
+  flex-basis: 50%;
+}
+
+.card-code {
+  margin-top:0.6em;
+  flex-basis: 20%;
+}
+
+.card-date {
+  margin-top:0.6em;
+  flex-basis: 20%;
+}
+
 
 input[type=email] {
   width: 100%;
@@ -79,10 +210,6 @@ input[type=email] {
   margin-bottom: 1em;
   border: 1px solid #1B1B1B;
   border-radius: 3px;
-}
-
-.contact-info label {
-  font-size: 0.8em;
 }
 
 input[type=text] {
@@ -93,26 +220,72 @@ input[type=text] {
   border-radius: 3px;
 }
 
-.shipping-info label {
-  font-size: 0.8em;
-}
-
 select {
-  width: 101%;
-  height: 2em;
-  margin-bottom:1em;
+  width: 100.7%;
+  height: 2.2em;
+  margin-bottom:1.1em;
   border: 1px solid #1B1B1B;
   border-radius: 3px;
 }
 
-.submit-button {
+.order-summary h3 {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin-top: 3em;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.order-summary {
+  font-family: Bahnschrift;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  max-width: 900px;
+  margin: auto;
+}
+
+.summary-content img{
+  width: 70%;
+  height: auto;
+}
+
+.summary-content>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order-img {
+  flex-basis: 40%;
+}
+
+.order-detail {
+  margin-top:1em;
+  flex-basis: 20%;
+}
+
+.order-price {
   text-align: right;
+  margin-top:1em;
+  flex-basis: 40%;
+}
+
+.subtotal {
+  display: flex;
+  padding-top: 1.5em;
+  font-weight: bold;
+}
+
+.submit-button {
+  margin: 3em auto;
+  text-align: center;
 }
 
 .submit {
   font-family: Bahnschrift;
   display: inline-block;
-  padding: 0.5em 0.9em;
+  padding: 0.5em 3em;
   margin-left: 0.5em;
   margin-right: 0.5em;
   border: 1px solid #1B1B1B;
@@ -128,49 +301,97 @@ select {
   opacity: 0.5;
 }
 
-.checkout-page {
-  display:flex;
-  justify-content: center;
-}
-
-.checkout-page>div {
-  flex-basis:70%;
-  margin: 3em 10em;
-}
 /*Content on left End*/
 
 
 
 /*Content on right Start*/
 
-.order-summary { 
-  display:flex;
-  justify-content: center;
-}
-
-.order-title {
-  text-align: center;
-}
-
-.order-summary>div {
-  flex-basis:40%;
-  margin:5em;
-}
-
-.left-row {
-  text-align: left;
-}
-
-.right-row {
-  text-align: right;
-}
-
-.final-price {
-  font-weight: bold;
-  font-size: 1.2em;
-}
 
 
 /*Content on right End*/
 
+@media only screen and (max-width:1000px){
+  .order-summary{
+    margin: 0 2rem;
+  }
+  form{
+    margin: 0 2rem;
+  }
+}
 
+@media (max-width: 980px){
+  .header{
+    margin-bottom: 2em;
+  }
+  .nav-left{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 6em;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    padding-top: 30%;
+  }
+  .nav-left a{
+    width: 100%;
+    text-align: center;
+    line-height: 500%;
+  }
+
+  .menu-expand{
+    display: block;
+  }
+  #menuCheck ~ nav{
+    display: none;
+  }
+  #menuCheck:checked ~ nav{
+    display: block;
+  }
+  .nav-left a{
+    display: block;
+  }
+}
+
+@media only screen and (max-width:550px){
+
+  .contact-detail{
+    flex-direction: column;
+  }
+  .shipping-detail{
+    flex-direction: column;
+  }
+  .shipping-detail>div{
+    flex-direction: column;
+  }
+  .order-summary{
+    margin: 0 1rem;
+  }
+  .summary-content{
+    font-size:10pt;
+  }
+  .summary-content .order-img{
+    flex-basis: 40%;
+  }
+  .summary-content .order-detail{
+    flex-basis: 40%;
+  }
+  .summary-content .order-price{
+    flex-basis: 10%;
+  }
+
+  .order-img img{
+    width:100%;
+  }
+  form{
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 420px){
+  .header{
+    font-size: 0.8em;
+  }
+
+}
