@@ -11,11 +11,21 @@
 }
 /*Main Navigation Start*/
 
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  height: 4em;
+  margin-bottom: 2em;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 2em;
+  margin-bottom:1rem;
 }
 .main-nav a{
   text-decoration: none;
@@ -23,35 +33,36 @@
   padding: 0em 0.5em;
   font-size: 1.1em;
 }
-
+  
 .nav-left{
   font-family: Bahnschrift;
   font-weight: bold;
-  flex-basis: 25%;
+  flex-basis: 35%;
+
 }
 .nav-left a:hover{
   font-size: 120%;
 }
-
-
+.menu-expand{
+  display: none;
+  width:35%;
+}
+#menuCheck{
+  display: none;
+}
 .nav-logo{
-  flex-basis: 50%;
+  flex-basis: 30%;
   text-align: center; 
 }
 .nav-logo a{
-  font-family: Constantia;
+  font-family: 'Black Ops One', cursive;
   font-weight: bold;
   font-size: 2em;
 }
-.nav-logo i{
-  font-size: 2em;
-  color: #1B1B1B;
-}
-
 .nav-right{
   font-family: Bahnschrift;
-  font-weight: bold;
-  flex-basis: 25%;
+    font-weight: bold;
+    flex-basis: 35%;
   text-align: right;  
 }
 .nav-right a:hover{
@@ -134,11 +145,125 @@
 }
 
 .footer {
-  margin-top: 7em;
-  text-align:center;
   display:flex;
-  flex-direction: column;
-  padding:8em 2.5em;
-  background-color: #454545;
   color: white;
+  justify-content: space-around;
+  text-align:left;
+  padding:4em 2em;
+  background-color: #454545;
+  font-family: Bahnschrift;
+}
+
+.footer i {
+  font-size: 2em;
+  margin-top: 0.9em;
+  margin-right:0.3em;
+}
+
+.footer-left div {
+  display: flex;
+  font-size: 1.2em; 
+  flex-basis:30%;
+}
+
+.corporation {
+  text-align: left;
+  padding-bottom: 1.2em;
+  font-size: 1.1em;
+}
+
+.links {
+  padding-top: 1.2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.links a {
+  color: white;
+  padding-right:1em;
+}
+
+@media (max-width: 980px){
+  .header{
+    margin-bottom: 2em;
+  }
+  .nav-left{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 6em;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    padding-top: 30%;
+  }
+  .nav-left a{
+    width: 100%;
+    text-align: center;
+    line-height: 500%;
+  }
+
+  .menu-expand{
+    display: block;
+  }
+  #menuCheck ~ nav{
+    display: none;
+  }
+  #menuCheck:checked ~ nav{
+    display: block;
+  }
+  .nav-left a{
+    display: block;
+  }
+  .list-column>div{
+    flex-basis:40%;
+  }
+}
+/*footer response for mobile*/
+@media (max-width: 760px){
+  .footer{
+    font-size: 80%;
+  }
+}
+@media (max-width: 470px){
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer>div{
+    flex-basis: 60%;
+    margin: 2em auto;
+  }
+  .footer-right>div{
+    text-align: center;
+  }
+  /*.links{
+    text-align: center;
+  }*/
+}
+@media (max-width: 420px){
+  .header{
+    font-size: 0.8em;
+  }
+  .bag-icon i{
+    font-size: 3em;
+  }
+  .thank-you h2{
+    font-size: 2em;
+  }
+  .thank-you h3{
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 350px){
+
+  .bag-icon i{
+    font-size: 2.5em;
+  }
+  .thank-you h2{
+    font-size: 1.5em;
+  }
+  .thank-you h3{
+    font-size: 0.9em;
+  }
 }

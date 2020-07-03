@@ -8,6 +8,7 @@
 	<title>Confirmation</title>
 	<link href="css/confirmation.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
 </head>
 
@@ -15,22 +16,25 @@
 
 	<!--Main Navigation-->
 
-	<div class="main-nav">
-		<div class="nav-left">
-			<a href="home.html">HOME</a>
-			<a href="category.html">SHOP</a>
-			<a href="contact.html">CONTACT</a>
-		</div>
+	<div class="header" >
+		<div class="main-nav">
+			<input type="checkbox" name="menuBar" id="menuCheck">
+			<label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
+        	<nav class="nav-left">
+	        	<a href="home.html">HOME</a>
+	        	<a href="category.html">SHOP</a>
+	       		<a href="contact.html">CONTACT</a>
+	        </nav>
 
-		<div class="nav-logo">
-			<i class="fa fa-headphones"></i>
-			<a class="logo-font" href="home.html">NOIZERO</a>
-		</div>
+	        <div class="nav-logo">
+	        	<a class="logo-font" href="home.html">NOIZERO</a>
+	        </div>
 
-		<div class="nav-right">
-			<a href="account.html"><i class="fa fa-user"></i></a>
-			<a href="cart.html">MY CART</a>
-		</div>
+	        <div class="nav-right">
+	        	<a href="account.html"><i class="fa fa-user"></i></a>
+	      		<a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
+	        </div>
+		 </div>
 	</div>
 
 	<!--Home Content-->
@@ -51,9 +55,33 @@
 			<button onclick="window.location.href='category.html'" class="check-button">BACK TO SHOP</button>
 
 		</div>
-
-		<div class="footer">Footer</div>
 	</section>
+	<section>
+
+			<div class="footer">
+				<div class="footer-left">
+					<div>FOLLOW US</div>
+					<i class='fa fa-facebook-square'></i>
+					<i class='fa fa-instagram'></i>
+					<i class='fa fa-twitter-square'></i>
+				</div>
+				<div class="footer-right">
+					<div class="corporation">© NOIZERO Corporation 2020</div>
+					<div class="links">
+						<div class="link1">
+							<a href="style_guide.html">Style Guide</a>
+						</div>
+						<div class="link2">
+							<a href="citation.html">Citation</a>
+						</div>
+						<div class="link3">
+							<a href="wireframes.html">Wireframes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 </body>
 
