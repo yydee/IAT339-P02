@@ -132,8 +132,8 @@ body{
 	opacity: 50%;
 	transform: scale(1.1);
 }
-.color-white{
-	background-color: white;
+.color-black{
+	background-color: black;
 	border: 1px solid #999999;
 	width: 1.5em;
 	height: 1.5em;
@@ -818,7 +818,6 @@ body{
   .footer-right>div{
     text-align: center;
   }
- 
 }
 /*DONE*/
 	
