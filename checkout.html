@@ -2,157 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link href="css/checkout.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Checkout</title>
+	<link href="css/checkout.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Main Navigation-->
-    <div class="header" >
-        <div class="main-nav">
-            <input type="checkbox" name="menuBar" id="menuCheck">
-            <label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
-            <nav class="nav-left">
-                <a href="home.html">HOME</a>
-                <a href="category.html">SHOP</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
+	<!--Main Navigation-->
+	<div class="header" >
+		<div class="main-nav">
+			<input type="checkbox" name="menuBar" id="menuCheck">
+			<label for="menuCheck" class="menu-expand" ><i class="fa fa-bars"></i></label>
+			<nav class="nav-left">
+				<a href="home.html">HOME</a>
+				<a href="category.html">SHOP</a>
+				<a href="contact.html">CONTACT</a>
+			</nav>
 
-            <div class="nav-logo">
-                <a class="logo-font" href="home.html">NOIZERO</a>
-            </div>
+			<div class="nav-logo">
+				<a class="logo-font" href="home.html">NOIZERO</a>
+			</div>
 
-            <div class="nav-right">
-                <a href="account.html"><i class="fa fa-user"></i></a>
-                <a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
-            </div>
-         </div>
-    </div>
-    <!--Checkout Content-->
-    <section class="order-summary">
-        <h3>ORDER SUMMARY</h3>
-        <div class="summary-content">
-            <div class="order">
-                <div class="order-img">
-                    <img src="images/product4.png" alt="product4">
-                </div>
-                <div class="order-detail">
-                    <p>NC 750 Wireless</p>
-                    <p>Tax</p>
-                    <p>Shipping</p>
-                </div>
-                <div class="order-price">
-                    <p>$219.99</p>
-                    <p>$26.40</p>
-                    <p>$4.99</p>
-                </div>
-            </div>
-            <div class="subtotal">
-                <div class="final1">Subtotal</div>
-                <div class="final2">$251.38</div>
-            </div>
-        </div>
-    </section>
-    <form action="confirmation.html">
-        <section class="contact-info">
-            <h3>CONTACT INFORMATION</h3>
-            <div class="contact-detail">
-                <div class="email">
-                    <div class="email-info">
-                        <input type="email" id="email" name="email" placeholder=" email@address.com">
-                    </div>
-                    <div class="email-news">
-                        <input type="checkbox" id="notification" name="notification" value="notify-me">
-                        <label for="notification"> Keep me receive the news</label>
-                    </div>
-                </div>
-                <div class="phone-number">
-                    <input type="text" id="phone" name="phone" placeholder=" Phone Number">
-                </div>
-        </section>
-        <section class="shipping-info">
-            <h3>SHIPPING INFORMATION</h3>
-            <div class="shipping-detail">
-                <div class="name">
-                    <div class="first-name">
-                        <input type="text" id="first-name" name="first-name" placeholder=" First Name">
-                    </div>
-                    <div class="last-name">
-                        <input type="text" id="last-name" name="last-name" placeholder=" Last Name">
-                    </div>
-                </div>
-                <div class="address">
-                    <div class="address1">
-                        <input type="text" id="address" name="address" placeholder=" Address">
-                    </div>
-                    <div class="address2">
-                        <input type="text" id="more-address" name="more-address" placeholder=" Apartment, suite etc.">
-                    </div>
-                </div>
-                <div class="country-state">
-                    <div class="country">
-                        <select id="countries" name="contries">
-                            <option value="canada">Canada</option>
-                            <option value="america">America</option>
-                        </select>
-                    </div>
-                    <div class="state">
-                        <select id="state" name="state">
-                            <option value="BC">BC</option>
-                            <option value="ON">ON</option>
-                            <option value="QC">QC</option>
-                            <option value="AB">AB</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="city-postal">
-                    <div class="city">
-                        <input type="text" id="city" name="city" placeholder=" City">
-                    </div>
-                    <div class="postal">
-                        <input type="text" id="post-code" name="post-code" placeholder=" Postal Code">
-                    </div>
-                </div>
-                <div class="billing">
-                    <input type="checkbox" id="billing" name="billing" value="billing">
-                    <label for="billing"> Use as billing address</label>
-                </div>
-        </section>
-        <section class="shipping-method">
-            <h3>SHIPPING METHOD</h3>
-            <div class="shipping-method-detail">
-                <div class="standard">
-                    <input type="radio" id="standard" name="standard" value="standard">
-                    <label for="standard"> $4.99 CAD / 7 days / Standard</label>
-                </div>
-                <div class="express">
-                    <input type="radio" id="express" name="express" value="express">
-                    <label for="express"> $10.99 CAD / 1 day / Express</label>
-                </div>
-            </div>
-        </section>
-        <section class="payment-method">
-            <h3>PAYMENT METHOD</h3>
-            <div class="payment-detail">
-                <div class="card-num">
-                    <input type="text" id="card-number" name="card-number" placeholder=" Card Number">
-                </div>
-                <div class="card-date">
-                    <input type="text" id="expiry-date" name="expiry-date" placeholder=" MM/YY">
-                </div>
-                <div class="card-code">
-                    <input type="text" id="security-code" name="security-code" placeholder=" Security Code">
-                </div>
-            </div>
-        </section>
-        <div class="submit-button">
-            <input class="submit" type="submit" value="PAY NOW">
-        </div>
-    </form>
+			<div class="nav-right">
+				<a href="account.html"><i class="fa fa-user"></i></a>
+				<a href="cart.html"><i class="fa fa-cart-arrow-down"></i></a>
+			</div>
+		</div>
+	</div>
+	<!--Checkout Content-->
+	<section class="order-summary">
+		<h3>ORDER SUMMARY</h3>
+		<div class="summary-content">
+			<div class="order">
+				<div class="order-img">
+					<img src="images/product4.png" alt="product4">
+				</div>
+				<div class="order-detail">
+					<p>NC 750 Wireless</p>
+					<p>Tax</p>
+					<p>Shipping</p>
+				</div>
+				<div class="order-price">
+					<p>$219.99</p>
+					<p>$26.40</p>
+					<p>$4.99</p>
+				</div>
+			</div>
+			<div class="subtotal">
+				<div class="final1">Subtotal</div>
+				<div class="final2">$251.38</div>
+			</div>
+		</div>
+	</section>
+	<form action="confirmation.html">
+		<section class="contact-info">
+			<h3>CONTACT INFORMATION</h3>
+			<div class="contact-detail">
+				<div class="email">
+					<div class="email-info">
+						<input type="email" id="email" name="email" placeholder=" email@address.com">
+					</div>
+					<div class="email-news">
+						<input type="checkbox" id="notification" name="notification" value="notify-me">
+						<label for="notification"> Keep me receive the news</label>
+					</div>
+				</div>
+				<div class="phone-number">
+					<input type="text" id="phone" name="phone" placeholder=" Phone Number">
+				</div>
+			</div>
+		</section>
+		<section class="shipping-info">
+			<h3>SHIPPING INFORMATION</h3>
+			<div class="shipping-detail">
+				<div class="name">
+					<div class="first-name">
+						<input type="text" id="first-name" name="first-name" placeholder=" First Name">
+					</div>
+					<div class="last-name">
+						<input type="text" id="last-name" name="last-name" placeholder=" Last Name">
+					</div>
+				</div>
+				<div class="address">
+					<div class="address1">
+						<input type="text" id="address" name="address" placeholder=" Address">
+					</div>
+					<div class="address2">
+						<input type="text" id="more-address" name="more-address" placeholder=" Apartment, suite etc.">
+					</div>
+				</div>
+				<div class="country-state">
+					<div class="country">
+						<select id="countries" name="contries">
+							<option value="canada">Canada</option>
+							<option value="america">America</option>
+						</select>
+					</div>
+					<div class="state">
+						<select id="state" name="state">
+							<option value="BC">BC</option>
+							<option value="ON">ON</option>
+							<option value="QC">QC</option>
+							<option value="AB">AB</option>
+						</select>
+					</div>
+				</div>
+				<div class="city-postal">
+					<div class="city">
+						<input type="text" id="city" name="city" placeholder=" City">
+					</div>
+					<div class="postal">
+						<input type="text" id="post-code" name="post-code" placeholder=" Postal Code">
+					</div>
+				</div>
+				<div class="billing">
+					<input type="checkbox" id="billing" name="billing" value="billing">
+					<label for="billing"> Use as billing address</label>
+				</div>
+			</div>
+		</section>
+		<section class="shipping-method">
+			<h3>SHIPPING METHOD</h3>
+			<div class="shipping-method-detail">
+				<div class="standard">
+					<input type="radio" id="standard" name="standard" value="standard">
+					<label for="standard"> $4.99 CAD / 7 days / Standard</label>
+				</div>
+				<div class="express">
+					<input type="radio" id="express" name="express" value="express">
+					<label for="express"> $10.99 CAD / 1 day / Express</label>
+				</div>
+			</div>
+		</section>
+		<section class="payment-method">
+			<h3>PAYMENT METHOD</h3>
+			<div class="payment-detail">
+				<div class="card-num">
+					<input type="text" id="card-number" name="card-number" placeholder=" Card Number">
+				</div>
+				<div class="card-date">
+					<input type="text" id="expiry-date" name="expiry-date" placeholder=" MM/YY">
+				</div>
+				<div class="card-code">
+					<input type="text" id="security-code" name="security-code" placeholder=" Security Code">
+				</div>
+			</div>
+		</section>
+		<div class="submit-button">
+			<input class="submit" type="submit" value="PAY NOW">
+		</div>
+	</form>
 </body>
 
 </html>
