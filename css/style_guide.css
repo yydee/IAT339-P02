@@ -185,6 +185,8 @@ input[type=text] {
   width: 20%;
   height: 2em;
   margin-bottom: 1em;
+  border: 1px solid #1B1B1B;
+  border-radius: 3px;
 }
 
 .swatches .color{
